@@ -1,0 +1,134 @@
+@import "./reset";
+@import "./variable";
+
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+section {
+  padding: 0 121px;
+  margin-top: 138px;
+}
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.button-primary {
+  background-color: $btn-color;
+  color: white;
+  border: none;
+  width: 247px;
+  height: 65px;
+  border-radius: 33px;
+  font-size: 23px;
+  box-shadow: 0px 16px 48px #00000029;
+}
+.card {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 19px;
+}
+.card-img {
+  width: 218px;
+  height: 187px;
+  padding-left: 18px;
+}
+.card-icon {
+  width: 70px;
+  height: 70px;
+}
+header {
+  img {
+    width: 164px;
+    height: 48px;
+  }
+  padding-top: 33px;
+  text-align: center;
+  nav{
+    margin-top: 30px;
+    ul{
+      display: flex;
+      gap: 60px;
+      li{
+        a{
+          color: black;
+          font-size: 19px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+#banner-section {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  margin-bottom: 60px;
+  h1 {
+    margin-top: 117px;
+    font-weight: 900;
+    font-size: 40px;
+  }
+  p {
+    margin: 20px 0 62px;
+    font-size: 18px;
+  }
+}
+#comment-container {
+  background-color: $secondary-bg;
+  box-shadow: 0px 16px 48px #00000029;
+  border-radius: 42px;
+  width: 1097px;
+  height: 363px;
+  margin: auto;
+  #comment-box {
+    margin: 0 60px 0 120px;
+    p {
+      font-size: 14px;
+    }
+    .card {
+      box-shadow: 0px 16px 48px #00000029;
+    }
+  }
+  .user-img {
+    width: 44px;
+    height: 44px;
+  }
+  .review-star {
+    width: 14px;
+    height: 14px;
+  }
+  #arrow-right {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    right: -20px;
+    top: 70%;
+    box-shadow: 0px 7px 17px #00000029;
+  }
+}
+#sponsor-section {
+  margin-top: 300px;
+  #sponsors {
+    height: 100px;
+  }
+  #jot-logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 370px;
+  border: 1px solid #707070;
+  margin-top: 180px;
+  text-align: center;
+  font-size: 18px;
+  p{
+    padding-top: 300px;
+    padding-bottom: 50px;
+  }
+}

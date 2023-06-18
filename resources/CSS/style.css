@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
+section {
+  padding: 0 121px;
+  margin-top: 138px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.button-primary {
+  background-color: #1492E6;
+  color: white;
+  border: none;
+  width: 247px;
+  height: 65px;
+  border-radius: 33px;
+  font-size: 23px;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+}
+
+.card {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 19px;
+}
+
+.card-img {
+  width: 218px;
+  height: 187px;
+  padding-left: 18px;
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+}
+
+header {
+  padding-top: 33px;
+  text-align: center;
+}
+header img {
+  width: 164px;
+  height: 48px;
+}
+header nav {
+  margin-top: 30px;
+}
+header nav ul {
+  display: flex;
+  gap: 60px;
+}
+header nav ul li a {
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+#banner-section {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  margin-bottom: 60px;
+}
+#banner-section h1 {
+  margin-top: 117px;
+  font-weight: 900;
+  font-size: 40px;
+}
+#banner-section p {
+  margin: 20px 0 62px;
+  font-size: 18px;
+}
+
+#comment-container {
+  background-color: #F8FAFC;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 42px;
+  width: 1097px;
+  height: 363px;
+  margin: auto;
+}
+#comment-container #comment-box {
+  margin: 0 60px 0 120px;
+}
+#comment-container #comment-box p {
+  font-size: 14px;
+}
+#comment-container #comment-box .card {
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+}
+#comment-container .user-img {
+  width: 44px;
+  height: 44px;
+}
+#comment-container .review-star {
+  width: 14px;
+  height: 14px;
+}
+#comment-container #arrow-right {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  right: -20px;
+  top: 70%;
+  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
+}
+
+#sponsor-section {
+  margin-top: 300px;
+}
+#sponsor-section #sponsors {
+  height: 100px;
+}
+#sponsor-section #jot-logo {
+  width: 90px;
+  height: 90px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 370px;
+  border: 1px solid #707070;
+  margin-top: 180px;
+  text-align: center;
+  font-size: 18px;
+}
+footer p {
+  padding-top: 300px;
+  padding-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */
