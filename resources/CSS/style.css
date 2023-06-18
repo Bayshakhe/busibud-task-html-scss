@@ -59,25 +59,25 @@ body {
 }
 
 section {
-  padding: 0 121px;
-  margin-top: 138px;
+  padding: 0 30px;
+  margin-top: 80px;
 }
 
 .section-title {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .button-primary {
   background-color: #1492E6;
   color: white;
   border: none;
-  width: 247px;
-  height: 65px;
-  border-radius: 33px;
-  font-size: 23px;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 18px;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
 }
 
@@ -101,33 +101,32 @@ header {
   padding-top: 33px;
   text-align: center;
 }
-header img {
-  width: 164px;
-  height: 48px;
-}
 header nav {
   margin-top: 30px;
 }
 header nav ul {
   display: flex;
-  gap: 60px;
+  gap: 20px;
 }
 header nav ul li a {
   color: black;
-  font-size: 19px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 #banner-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 65px;
+  gap: 40px;
   margin-bottom: 60px;
 }
+#banner-section img {
+  width: 100%;
+}
 #banner-section h1 {
-  margin-top: 117px;
-  font-weight: 900;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 30px;
 }
 #banner-section p {
   margin: 20px 0 62px;
@@ -138,12 +137,12 @@ header nav ul li a {
   background-color: #F8FAFC;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
   border-radius: 42px;
-  width: 1097px;
-  height: 363px;
+  width: full;
+  height: auto;
   margin: auto;
 }
 #comment-container #comment-box {
-  margin: 0 60px 0 120px;
+  margin: 0 30px;
 }
 #comment-container #comment-box p {
   font-size: 14px;
@@ -165,15 +164,15 @@ header nav ul li a {
   padding: 10px;
   border-radius: 50%;
   right: -20px;
-  top: 70%;
+  top: 85%;
   box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
 }
 
 #sponsor-section {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 #sponsor-section #sponsors {
-  height: 100px;
+  height: auto;
 }
 #sponsor-section #jot-logo {
   width: 90px;
@@ -185,11 +184,95 @@ footer {
   color: white;
   height: 370px;
   border: 1px solid #707070;
-  margin-top: 180px;
+  margin-top: 30px;
   text-align: center;
   font-size: 18px;
 }
 footer p {
   padding-top: 300px;
   padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0 121px;
+    margin-top: 138px;
+  }
+  .section-title {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+  .button-primary {
+    width: 247px;
+    height: 65px;
+    border-radius: 33px;
+    font-size: 23px;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  }
+  header img {
+    width: 164px;
+    height: 48px;
+  }
+  header nav ul {
+    gap: 60px;
+  }
+  header nav ul li a {
+    font-size: 19px;
+  }
+  #banner-section {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+  #banner-section img {
+    width: 509px;
+    height: 518px;
+    padding-left: 65px;
+  }
+  #banner-section h1 {
+    margin-top: 117px;
+    font-weight: 900;
+    font-size: 40px;
+  }
+  #banner-section p {
+    margin: 20px 0 62px;
+    font-size: 18px;
+  }
+  #comment-container {
+    background-color: #F8FAFC;
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 42px;
+    width: 1097px;
+    height: 363px;
+    margin: auto;
+  }
+  #comment-container #comment-box {
+    margin: 0 60px 0 120px;
+  }
+  #comment-container #comment-box p {
+    font-size: 14px;
+  }
+  #comment-container #comment-box .card {
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  }
+  #comment-container .user-img {
+    width: 44px;
+    height: 44px;
+  }
+  #comment-container .review-star {
+    width: 14px;
+    height: 14px;
+  }
+  #comment-container #arrow-right {
+    right: -20px;
+    top: 70%;
+  }
+  #sponsor-section {
+    margin-top: 300px;
+  }
+  #sponsor-section #sponsors {
+    height: 100px;
+  }
+  footer {
+    margin-top: 180px;
+  }
 }/*# sourceMappingURL=style.css.map */

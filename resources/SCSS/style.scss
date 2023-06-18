@@ -6,23 +6,23 @@ body {
   margin: auto;
 }
 section {
-  padding: 0 121px;
-  margin-top: 138px;
+  padding: 0 30px;
+  margin-top: 80px;
 }
 .section-title {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .button-primary {
   background-color: $btn-color;
   color: white;
   border: none;
-  width: 247px;
-  height: 65px;
-  border-radius: 33px;
-  font-size: 23px;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 18px;
   box-shadow: 0px 16px 48px #00000029;
 }
 .card {
@@ -39,21 +39,17 @@ section {
   height: 70px;
 }
 header {
-  img {
-    width: 164px;
-    height: 48px;
-  }
   padding-top: 33px;
   text-align: center;
-  nav{
+  nav {
     margin-top: 30px;
-    ul{
+    ul {
       display: flex;
-      gap: 60px;
-      li{
-        a{
+      gap: 20px;
+      li {
+        a {
           color: black;
-          font-size: 19px;
+          font-size: 16px;
           text-decoration: none;
         }
       }
@@ -62,13 +58,16 @@ header {
 }
 #banner-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 65px;
+  gap: 40px;
   margin-bottom: 60px;
+  img {
+    width: 100%;
+  }
   h1 {
-    margin-top: 117px;
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 30px;
   }
   p {
     margin: 20px 0 62px;
@@ -79,11 +78,11 @@ header {
   background-color: $secondary-bg;
   box-shadow: 0px 16px 48px #00000029;
   border-radius: 42px;
-  width: 1097px;
-  height: 363px;
+  width: full;
+  height: auto;
   margin: auto;
   #comment-box {
-    margin: 0 60px 0 120px;
+    margin: 0 30px;
     p {
       font-size: 14px;
     }
@@ -105,30 +104,122 @@ header {
     padding: 10px;
     border-radius: 50%;
     right: -20px;
-    top: 70%;
+    top: 85%;
     box-shadow: 0px 7px 17px #00000029;
   }
 }
 #sponsor-section {
-  margin-top: 300px;
+  margin-top: 100px;
   #sponsors {
-    height: 100px;
+    height: auto;
   }
   #jot-logo {
     width: 90px;
     height: 90px;
   }
 }
-footer{
+footer {
   background-color: black;
   color: white;
   height: 370px;
   border: 1px solid #707070;
-  margin-top: 180px;
+  margin-top: 30px;
   text-align: center;
   font-size: 18px;
-  p{
+  p {
     padding-top: 300px;
     padding-bottom: 50px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  section {
+    padding: 0 121px;
+    margin-top: 138px;
+  }
+  .section-title {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+  .button-primary {
+    width: 247px;
+    height: 65px;
+    border-radius: 33px;
+    font-size: 23px;
+    box-shadow: 0px 16px 48px #00000029;
+  }
+  header {
+    img {
+      width: 164px;
+      height: 48px;
+    }
+    nav {
+      ul {
+        gap: 60px;
+        li {
+          a {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+  #banner-section {
+    flex-direction: row;
+    margin-bottom: 60px;
+    img {
+      width: 509px;
+      height: 518px;
+      padding-left: 65px;
+    }
+    h1 {
+      margin-top: 117px;
+      font-weight: 900;
+      font-size: 40px;
+    }
+    p {
+      margin: 20px 0 62px;
+      font-size: 18px;
+    }
+  }
+  #comment-container {
+    background-color: $secondary-bg;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 42px;
+    width: 1097px;
+    height: 363px;
+    margin: auto;
+    #comment-box {
+      margin: 0 60px 0 120px;
+      p {
+        font-size: 14px;
+      }
+      .card {
+        box-shadow: 0px 16px 48px #00000029;
+      }
+    }
+    .user-img {
+      width: 44px;
+      height: 44px;
+    }
+    .review-star {
+      width: 14px;
+      height: 14px;
+    }
+    #arrow-right {
+      right: -20px;
+      top: 70%;
+    }
+  }
+  #sponsor-section {
+    margin-top: 300px;
+    #sponsors {
+      height: 100px;
+    }
+  }
+
+  footer {
+    margin-top: 180px;
   }
 }
